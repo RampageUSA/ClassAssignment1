@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bounce : MonoBehaviour
 {
-    /*public float offset, speed;
+    public float offset, speed;
     public AnimationCurve height, movement;
     public Transform cubeA, cubeB;
     private float rate;
@@ -27,11 +27,9 @@ public class Bounce : MonoBehaviour
 
 
         if (rate >= 1)
-
             rate = 0;
 
     }
 
-}*/
-} 
+}
 
