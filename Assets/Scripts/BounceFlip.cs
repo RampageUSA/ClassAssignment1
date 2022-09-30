@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BounceFlip : MonoBehaviour
-{ }
+{
         private bool bFlipDirection;
         // Update is called once per frame
 
@@ -24,4 +24,4 @@ public class BounceFlip : MonoBehaviour
 
         }
 
-    }
+   }
