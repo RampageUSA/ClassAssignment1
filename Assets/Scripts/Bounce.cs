@@ -21,7 +21,6 @@ public class Bounce : MonoBehaviour
         transform.position = desiredPosition;
 
         if (rate >= 1)
-
             rate = 0;
 
     }
