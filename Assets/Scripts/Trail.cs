@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Trail : MonoBehaviour
 {
+    /*
     private Vector3 cachedPosition;
 
     // Start is called before the first frame update
@@ -22,5 +23,5 @@ public class Trail : MonoBehaviour
             cachedPosition = transform.position;
         }
 
-    }
+    }*/
 }
