@@ -1,27 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+[RequireComponent(typeof(LineRenderer))]
 
 public class Trail : MonoBehaviour
 {
-    /*
-    private Vector3 cachedPosition;
-
-    // Start is called before the first frame update
+    [SerializeField]
+    private Vector3 position, position2;
+    [SerializeField]
+    private int length;
+    private LineRenderer trail;
+    
     void Start()
     {
-        cachedPosition = transform.position;
-    }
-
-    // Update is called once per frame
+        trail = GetComponent<LineRenderer>();
+    } 
+   
     void Update()
-
     {
-        if (Vector3.Distance(transform.position, cachedPosition) > 1)
+        trail.positionCount = length;
+        position = transform.position;
+
+        for(int i = 0; i < length; i++)
         {
-            Instantiate(transform.gameObject, transform.position, Quaternion.identity);
-            cachedPosition = transform.position;
+            position2 = trail.GetPosition(i);
+            trail.SetPosition(i, position);
+            position = position2;
         }
 
-    }*/
+
+
+    }
 }
