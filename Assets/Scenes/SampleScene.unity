@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -469,14 +469,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.06988025, y: -0, z: -0, w: 0.99755543}
-  m_LocalPosition: {x: 0, y: 2.56, z: -10}
+  m_LocalRotation: {x: 0.013415039, y: -0, z: -0, w: 0.99991006}
+  m_LocalPosition: {x: 0, y: 1.47, z: -5.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 8.014, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 1.537, y: 0, z: 0}
 --- !u!1 &1018949888
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,7 +729,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
+        value: 0.625
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -738,7 +738,7 @@ LineRenderer:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 0
+        value: 0.056030273
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -913,8 +913,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ecf348b199211440b47930053258793, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sphere: {fileID: 1055806667}
-  lTrail: {fileID: 1055806672}
   length: 3
 --- !u!114 &1055806676
 MonoBehaviour:
@@ -928,7 +926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8440b6c85c15bf4b895b9f0ef2aa2d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  length: 100
+  length: 500
 --- !u!1 &1062697741
 GameObject:
   m_ObjectHideFlags: 0

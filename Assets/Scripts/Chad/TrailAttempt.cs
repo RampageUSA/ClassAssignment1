@@ -1,24 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class TrailAttempt : MonoBehaviour
 {
-    public GameObject sphere;
-    public LineRenderer lTrail;
-    public int length = 3;
+    [SerializeField]
+    private int length;
+    private Vector3 position, position2;
+    private LineRenderer trail;
+
+    void Start()
+    {
+        trail = GetComponent<LineRenderer>();
+    }
 
     void Update()
     {
-        lTrail = GetComponent<LineRenderer>();
-        lTrail.SetPosition(0, transform.position);
+        trail.positionCount = length;
+        position = transform.position;
 
-        for(int i = 0; i < length - 1; i++)
+        for (int i = 0; i < length; i++)
         {
-            if (Vector3.Distance(lTrail.GetPosition(i), lTrail.GetPosition(i + 1)) > 1)
-            {
-
-            }
+         position2 = trail.GetPosition(i);
+         trail.SetPosition(i, position);
+         position = position2;
         }
     }
 }
