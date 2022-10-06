@@ -6,9 +6,8 @@ using UnityEngine;
 public class Trail : MonoBehaviour
 {
     [SerializeField]
-    private Vector3 position, position2;
-    [SerializeField]
     private int length;
+    private Vector3 position, position2;
     private LineRenderer trail;
     
     void Start()
